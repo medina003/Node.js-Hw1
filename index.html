@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apartment Filter</title>
+  </head>
+  <body>
+    <h1>Filter Apartments</h1>
+    <form>
+      <label>
+        <input
+          type="radio"
+          name="city"
+          value="Baku"
+          onchange="fetchApartments()"
+        />
+        Baku
+      </label>
+      <br />
+      <label>
+        <input
+          type="radio"
+          name="city"
+          value="Sumgait"
+          onchange="fetchApartments()"
+        />
+        Sumgait
+      </label>
+      <br />
+      <label>
+        <input
+          type="radio"
+          name="city"
+          value="Ganja"
+          onchange="fetchApartments()"
+        />
+        Ganja
+      </label>
+    </form>
+
+    <div id="apartments"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
